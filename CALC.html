@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="main">
+    <div class="calOuterBody">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-wifi"></i>
+
+        <!-- -----screen -->
+        <div class="screen">
+            <input type="text" placeholder="0" id="res">
+        </div>
+        <!-- butto -->
+        <div class="mainBtnDiv">
+            <div class="btns">
+
+                <span class="first-ROW-signs">
+                    <button onclick="ac()">AC</button>
+                    <button onclick="squaring('+/-')">+/-</button>
+                    <button onclick="show('%')">%</button>
+                    <button onclick="show('/')">/</button>
+                </span>
+
+            </div>
+            <div class="btns">
+                <span class="greybtn">
+                    <button onclick="show('7')">7</button>
+                    <button onclick="show('8')">8</button>
+                    <button onclick="show('9')">9</button>
+                </span>
+                <span class="signs">
+                    <button onclick="show('*')">*</button>
+                </span>
+            </div>
+            <div class="btns">
+                <span class="greybtn">
+                    <button onclick="show('4')">4</button>
+                    <button onclick="show('5')">5</button>
+                    <button onclick="show('6')">6</button>
+                </span>
+                <span class="signs">
+                    <button onclick="show('-')">−</button>
+                </span>
+            </div>
+            <div class="btns">
+                <span class="greybtn">
+                    <button onclick="show('1')">1</button>
+                    <button onclick="show('2')">2</button>
+                    <button onclick="show('3')">3</button>
+                </span>
+                <span class="signs">
+                    <button onclick="show('+')">+</button>
+                </span>
+            </div>
+            <div class="btns">
+                <span class="greybtn">
+                    <button id="btn-0" onclick="show('0')">0</button>
+
+                </span>
+                <span class="signs">
+                    <button onclick="show('.')">.</button>
+                    <button onclick="cal()">=</button>
+                </span>
+            </div>
+        </div>
+        <div class=" last-hr">
+            <hr>
+        </div>
+    </div>
+</div>
+<script src="cal.js"></script>
+
+<body>
+
+</body>
+
+</html>
